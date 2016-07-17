@@ -1,0 +1,12 @@
+---
+layout: default
+title: Props
+---
+
+<div id="props">
+  <ul class="props">
+    {% for category in site.data.propcategories %}
+      <li><a href="{{ category}}">{{ category}}</a></li>
+    {% endfor %}
+  </ul>
+</div>

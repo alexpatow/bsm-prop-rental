@@ -1,0 +1,35 @@
+@import "variables";
+@import "utilities";
+@import "reset";
+@import "syntax";
+@import "node_modules/skeleton-scss/scss/skeleton";
+
+body {
+    background: white;
+}
+
+//Home
+.header {
+	margin-bottom: 50px;
+}
+
+.title {
+	margin-bottom: 0;
+}
+
+a.extra:first-child {
+	margin-left: 0;
+}
+
+.hero {
+    text-align: center;
+}
+
+.callout {
+  text-align: center;
+}
+
+//Contact
+.address p{
+	margin-bottom: 0;
+}
