@@ -1,5 +1,5 @@
 name: BSM Prop Rental
 markdown: redcarpet
 highlighter: pygments # or rouge or null
-exclude: ["node_modules", "gulpfile.js", "package.json"]
-permalink: /props/:categories/:title
+exclude: ["node_modules", "gulpfile.js", "package.json", "images-to-md.js"]
+permalink: /props/:title

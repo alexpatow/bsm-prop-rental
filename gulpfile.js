@@ -28,13 +28,27 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'images-rebuild', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
         }
     });
 });
+
+gulp.task('images-rebuild', function(){
+    cp.exec('npm run images', function (err, stdout, stderr) {
+        if (err) {
+            console.log(err);
+        }
+        if (stdout) {
+            console.log(stdout);
+        }
+        if (stderr) {
+            console.log(stderr);
+        }
+  });
+})
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
@@ -57,6 +71,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('assets/**/*.+(JPG|jpg|jpeg|PNG|png|tiff)', ['images-rebuild']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 

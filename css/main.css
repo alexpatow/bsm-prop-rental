@@ -1027,6 +1027,14 @@ form {
 body {
   background: white; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left; }
+
 .header {
   margin-bottom: 50px; }
 
@@ -1036,11 +1044,70 @@ body {
 a.extra:first-child {
   margin-left: 0; }
 
+@media (max-width: 320px) {
+  a.extra {
+    font-size: 1.5rem; } }
+
 .hero {
   text-align: center; }
 
 .callout {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
+  .callout img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px; }
 
 .address p {
   margin-bottom: 0; }
+
+.category-header {
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-align: left; }
+  .category-header a {
+    color: #000;
+    text-decoration: none; }
+  .category-header a:hover {
+    color: #1eaedb;
+    text-decoration: underline; }
+
+.categories:first-child {
+  margin-top: -20px; }
+
+.prop:nth-of-type(2n + 1) {
+  margin-left: 0; }
+
+.prop-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover; }
+
+.breadcrumbs {
+  margin-bottom: 1rem; }
+  .breadcrumbs h2 {
+    display: inline; }
+
+.breadcrumb {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 5px; }
+
+.breadcrumb:visited {
+  color: #aaa; }
+
+.breadcrumb:hover {
+  color: #1eaedb; }
+
+.thumbnail {
+  height: 100px;
+  max-width: 15%;
+  object-fit: cover;
+  overflow-x: scroll;
+  overflow-y: hide; }
+
+.featured {
+  width: 100%; }

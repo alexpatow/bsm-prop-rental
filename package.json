@@ -4,6 +4,7 @@
   "description": "Revamp of the BSM prop rental site: bsmproprental.com",
   "main": "gulpfile.js",
   "scripts": {
+    "images": "node images-to-md.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex Patow",
