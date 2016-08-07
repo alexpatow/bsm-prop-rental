@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BSM Prop Rental | Fireplace</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="header">
+            <div class="row">
+              <div class="tweleve columns">
+                <h1 class="title"><a href="/">BSM Prop Rental</a></h1>
+              </div>
+            </div>
+            <div class="row">
+              <a class="extra" href="/">Home</a>
+              <a class="extra" href="/props/">Props</a>
+              <a class="extra" href="/contact/">Contact</a>
+              <a class="extra" href="/pricing/">Pricing</a>
+            </div>
+          </div>
+
+          <div class="row breadcrumbs">
+  <h2><a class="breadcrumb" href="./">Props > </a></h2>
+  <h2><a class="breadcrumb" href="./#set-pieces">Set pieces > </a></h2>
+  <h2>Fireplace</h2>
+</div>
+<div class="post">
+  <div class="row">
+    <div class="twelve columns">
+      <img id="featuredImage" src="/assets/set-pieces/fireplace/Fireplace.JPG" class="featured"/>
+    </div>
+  </div>
+  
+</div>
+
+<hr/>
+<div class="contact">
+  <h4>Interested? Contact Scott:</h4>
+  <form id="form" action="javascript:sendEmail()">
+    <div class="row">
+      <div class="twelve columns">
+        <label for="subject">
+          Subject
+        </label>
+        <input class="u-full-width" type="text" value="Fireplace Rental" id="subject" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <label for="body">
+          Body
+        </label>
+        <textarea class="u-full-width" type="text" id="body">Hi Scott, I'd like to rent the Fireplace. The best way to contact me is by email: test@example.com or by phone: (XXX)XXX-XXXX. Thanks, Your Name Here</textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <input class="button-primary" type="submit" value="Submit">
+      </div>
+    </div>
+  </form>
+</div>
+
+<script type="text/javascript">
+  function toggleFullscreen(element) {
+    var featuredImageElement = document.getElementById('featuredImage');
+    featuredImageElement.src = event.srcElement.src;
+  }
+  function sendEmail() {
+    var link = "mailto:seffertz@bsmschool.org?"
+             + "&subject=" + escape(document.getElementById('subject').value)
+             + "&body=" + escape(document.getElementById('body').value);
+
+    window.location.href = link;
+  }
+</script>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                BSM Drama Department<br />
+                Scott Effertz
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="mailto:seffertz@bsmschool.org">seffertz@bsmschool.org</a><br />
+                (612) 816-0647
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
