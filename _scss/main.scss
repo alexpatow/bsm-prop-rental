@@ -5,7 +5,7 @@
 @import "node_modules/skeleton-scss/scss/skeleton";
 
 body {
-    background: white;
+    background: #eee;
 }
 
 h1,
@@ -24,6 +24,10 @@ h6 {
 
 .title {
 	margin-bottom: 0;
+}
+
+a.extra {
+  color: #333;
 }
 
 a.extra:first-child {
@@ -49,6 +53,11 @@ a.extra:first-child {
     object-fit: cover;
     margin-bottom: 20px;
   }
+}
+
+p.caption {
+  text-align: center;
+  display: block;
 }
 
 //Contact

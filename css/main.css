@@ -78,7 +78,6 @@ a:visited {
   color: #000; }
 
 .header a.extra {
-  color: #aaa;
   margin-left: 1em; }
 
 .header a.extra:hover {
@@ -1025,7 +1024,7 @@ form {
   margin-bottom: 2.5rem; }
 
 body {
-  background: white; }
+  background: #eee; }
 
 h1,
 h2,
@@ -1040,6 +1039,9 @@ h6 {
 
 .title {
   margin-bottom: 0; }
+
+a.extra {
+  color: #333; }
 
 a.extra:first-child {
   margin-left: 0; }
@@ -1059,6 +1061,10 @@ a.extra:first-child {
     height: 200px;
     object-fit: cover;
     margin-bottom: 20px; }
+
+p.caption {
+  text-align: center;
+  display: block; }
 
 .address p {
   margin-bottom: 0; }
