@@ -55,6 +55,21 @@ a.extra:first-child {
   }
 }
 
+.footer .contact {
+  margin-right: 0 !important;
+  p {
+    text-align: left;
+  }
+}
+
+.footer img {
+  float: right;
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+
 p.caption {
   text-align: center;
   display: block;
