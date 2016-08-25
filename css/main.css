@@ -1035,7 +1035,8 @@ h6 {
   text-align: left; }
 
 .header {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 20px; }
 
 .title {
   margin-bottom: 0; }
@@ -1067,8 +1068,9 @@ a.extra:first-child {
   .footer .contact p {
     text-align: left; }
 
-.footer img {
-  float: right; }
+.logo {
+  float: right;
+  max-width: 100%; }
 
 .footer {
   margin-bottom: 20px; }
