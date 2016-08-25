@@ -20,6 +20,7 @@ h6 {
 //Home
 .header {
 	margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .title {
@@ -62,8 +63,9 @@ a.extra:first-child {
   }
 }
 
-.footer img {
+.logo {
   float: right;
+  max-width: 100%;
 }
 
 .footer {
