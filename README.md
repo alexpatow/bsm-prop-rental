@@ -39,5 +39,13 @@ In addition to creating new pages, the category should be added to the array in 
 This project uses SCSS (http://sass-lang.com/) for styling. It is compiled when ```gulp``` is run. All of the custom styles are in ```_scss/main.scss```. The project uses skeleton (http://getskeleton.com/) for basic styling.
 
 ## Deploying
-TBD.
+Create a new file named .env with the following contents, replacing the variables to suit your configuration:
+
+    HOST = "<WEBSITE URL>"
+    USERNAME = "<USERNAME>"
+    PASSWORD = "<PASSWORD>"
+
+To upload using FTP, run:
+
+    gulp deploy
 
