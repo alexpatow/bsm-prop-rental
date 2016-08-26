@@ -2,4 +2,5 @@ _site
 .idea
 node_modules
 .publish/
+.sublime-project
 .env
